@@ -1,0 +1,17 @@
+proxy:
+  secretToken: 97141abb55ea5321867979cb57bb2e6a86a2f4d6bb166fca45aedb07c212c42d
+  https:
+    enabled: true      
+    hosts:
+      - test.local
+    type: manual
+  service:
+    loadBalancerIP: 192.168.126.156
+  chp:
+    resources:
+      requests:
+        memory: 0
+        cpu: 0
+chp:
+  networkPolicy:
+    enabled: true
